@@ -1,4 +1,4 @@
-package abc;
+package com.example.demo;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.example.demo;
+package bootCampForBeginners;
 
 import java.util.*;
 

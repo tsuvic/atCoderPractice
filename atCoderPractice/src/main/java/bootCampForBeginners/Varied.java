@@ -9,6 +9,7 @@ public class Varied {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.next();
 		Set<String> cha = new HashSet<>();
+		//Char charは使えない
 		
 		for (int i = 0; i < s.length(); i++) {
 			cha.add(s.substring(i, i+1));

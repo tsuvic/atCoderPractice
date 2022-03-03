@@ -25,15 +25,16 @@ public class LowElements {
 //			}
 //		}
 //		System.out.println(ans);
-		int min = list.get(0);
-		int ans = 0;
-		for(int a : m) {
-			if(a <= min) {
-				ans++;
-				min = a;
-			}
-		}
-		System.out.println(ans);
 		
+//		int min = list.get(0);
+//		int ans = 0;
+//		for(int a : m) {
+//			if(a <= min) {
+//				ans++;
+//				min = a;
+//			}
+//		}
+//		System.out.println(ans);
+//		
 	}
 }

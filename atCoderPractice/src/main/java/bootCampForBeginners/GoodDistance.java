@@ -3,6 +3,7 @@ package bootCampForBeginners;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
+
 public class GoodDistance {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -21,19 +22,14 @@ public class GoodDistance {
             for (int j = i + 1; j < n; j++){//比較対象2
                 int check = 0;
                 for (int k = 0; k < d; k++){//横軸 次元数
-                    check += Math.pow(Math.abs(num[i][k] - num[j][k]),2);
-                    System.out.println(check);
+                    check += Math.pow(Math.abs(num[j][k] - num[i][k]),2);
                 }
-                double checked = Math.sqrt(check);
-                System.out.println(checked);
-                System.out.println(String.valueOf(checked));
-                Pattern pattern = Pattern.compile("^[0-9]+$|-[0-9]+$");
-                boolean result = pattern.matcher(String.valueOf(checked)).matches();
 
-                if (result) {
+//                Math.pow(check,0.5) * Math.pow(check,0.5) == checkでは誤差が出る
+//                if ((int)Math.pow(check,0.5) * (int)Math.pow(check,0.5) == check) {
+                if (Math.sqrt(Double.valueOf(check)) == Math.floor(Math.sqrt(Double.valueOf(check)))){
                     ans++;
                 }
-
             }
         }
         System.out.println(ans);

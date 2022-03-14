@@ -1,10 +1,12 @@
-package ABC243;
+		package ABC243;
 
-import java.sql.Array;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class A3 {
+public class A3_2 {
 	public static void main (String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
